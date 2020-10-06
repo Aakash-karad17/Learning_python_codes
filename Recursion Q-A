@@ -1,0 +1,10 @@
+Ques 1: Print sum of squares of first n natural numbers.
+Ans: 
+def sumsquare(n):
+    if(n==1):
+        return 1
+    else:
+        return(n*n+sumsquare(n-1))
+    
+num=int(input("Enter any number: "))
+print(sumsquare(num))
